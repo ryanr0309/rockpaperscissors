@@ -4,6 +4,7 @@ let playerWins = 0;
 
 function getComputerChoice(){
     let randomNumber = Math.floor(Math.random()*3)
+    console.log(`Computer has chosen ${Choices[randomNumber]}`)
     return Choices[randomNumber];
 }
 
@@ -11,7 +12,7 @@ function getPlayerChoice(){
     let playerNumber = window.prompt(
         'Select your choice: 1)Rock, 2)Paper, 3)Scissors'
     )
-   
+    console.log(`Player has chosen ${Choices[randomNumber-1]}`)
     return Choices[playerNumber-1]
 }
 

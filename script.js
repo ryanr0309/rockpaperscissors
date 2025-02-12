@@ -12,7 +12,7 @@ function getPlayerChoice(){
     let playerNumber = window.prompt(
         'Select your choice: 1)Rock, 2)Paper, 3)Scissors'
     )
-    console.log(`Player has chosen ${Choices[randomNumber-1]}`)
+    console.log(`Player has chosen ${Choices[playerNumber-1]}`)
     return Choices[playerNumber-1]
 }
 
